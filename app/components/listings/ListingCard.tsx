@@ -25,7 +25,6 @@ export default function ListingCard({
   disabled?: boolean;
   actionLabel?: string;
   actionId?: string;
-  //   currentUser?: SafeUser | null;
   currentUser?: User | null;
 }) {
   const router = useRouter();

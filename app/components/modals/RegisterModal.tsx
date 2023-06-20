@@ -40,9 +40,9 @@ export default function RegisterModal() {
     axios
       .post("/api/register", data)
       .then((e) => {
-        console.log(e);
         toast.success("Logged in");
         registerModal.onClose();
+        loginModal.onOpen();
       })
       .catch((err) => {
         toast.error(err.message);

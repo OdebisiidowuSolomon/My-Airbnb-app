@@ -38,8 +38,8 @@ const useFavorite = ({
           request = () => axios.post(`/api/favorites/${listingId}`);
         }
         await request();
-        router.refresh();
         toast.success("success!");
+        router.refresh();
       } catch (error) {
         throw new Error("Something went wrong.");
       }
